@@ -1,5 +1,103 @@
-template-repository (1.0-1) unstable; urgency=medium
+socket++ (1.12.13+git20131030.5d039ba-1) unstable; urgency=medium
 
-  * Initial release
+  * d/watch: use git mode since upstream does not use release tags
+  * Standards-Version: 4.6.0 (routine-update)
+  * Remove trailing whitespace in debian/rules (routine-update)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Tille <tille@debian.org>  Thu, 07 Oct 2021 08:58:39 +0200
+
+socket++ (1.12.13-11) unstable; urgency=medium
+
+  * Team Upload.
+  * Use strsignal() instead of sys_siglist to fix
+    FTBFS with glibc 2.32 (Closes: #979680)
+  * Standards-Version: 4.5.1 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Install static lib, remove useless .la files
+  * Propagate hardening flags
+
+ -- Nilesh Patra <npatra974@gmail.com>  Sun, 10 Jan 2021 17:18:56 +0530
+
+socket++ (1.12.13-10) unstable; urgency=medium
+
+  * cme fix dpkg-control
+  * Point Vcs fields to Salsa
+  * debhelper 11
+  * Standards-Version: 4.3.0
+  * Drop useless get-orig-source target
+  * Remove trailing whitespace in debian/copyright
+  * Remove trailing whitespace in debian/rules
+
+ -- Andreas Tille <tille@debian.org>  Wed, 09 Jan 2019 15:15:04 +0100
+
+socket++ (1.12.13-9) unstable; urgency=medium
+
+  [ Mathieu Malaterre ]
+  * Remove self from Uploaders
+
+  [ Andreas Tille ]
+  * Moved packaging from SVN to Git
+  * Add myself to Uploaders to not have this field empty
+  * Wild guessing a sensible watch file after pinging upstream to add
+    release tag on Github
+  * Code was somehow saved at Github by former Debian Maintainer
+  * cme fix dpkg-control
+  * Standards-Version: 4.1.1
+  * debhelper 10
+  * DEP5
+
+ -- Andreas Tille <tille@debian.org>  Thu, 05 Oct 2017 20:31:20 +0200
+
+socket++ (1.12.13-8) unstable; urgency=low
+
+  * Really make the package multiarch capable. Closes: #768405
+  * Bump Std-Vers to 3.9.6, no changes needed.
+
+ -- Mathieu Malaterre <malat@debian.org>  Fri, 07 Nov 2014 09:48:56 +0100
+
+socket++ (1.12.13-7) unstable; urgency=low
+
+  * Hurd does not support sys_errlist
+
+ -- Mathieu Malaterre <malat@debian.org>  Tue, 31 Dec 2013 11:39:02 +0100
+
+socket++ (1.12.13-6) unstable; urgency=low
+
+  * Final fixes for Hurd
+
+ -- Mathieu Malaterre <malat@debian.org>  Tue, 31 Dec 2013 08:39:12 +0100
+
+socket++ (1.12.13-5) unstable; urgency=low
+
+  * Yet another round of fixes for Hurd/kFreeBSD
+
+ -- Mathieu Malaterre <malat@debian.org>  Mon, 30 Dec 2013 14:15:34 +0100
+
+socket++ (1.12.13-4) unstable; urgency=low
+
+  * Fix remaining issues on Hurd/kFreeBSD
+
+ -- Mathieu Malaterre <malat@debian.org>  Sun, 29 Dec 2013 12:07:03 +0100
+
+socket++ (1.12.13-3) unstable; urgency=low
+
+  * Another round of fixes for Hurd/kFreeBSD
+
+ -- Mathieu Malaterre <malat@debian.org>  Fri, 13 Dec 2013 09:14:27 +0100
+
+socket++ (1.12.13-2) unstable; urgency=low
+
+  * Fix compilation on hurd/kFreeBSD
+  * Bump Std-Vers to 3.9.5, no changes needed
+
+ -- Mathieu Malaterre <malat@debian.org>  Wed, 11 Dec 2013 09:03:55 +0100
+
+socket++ (1.12.13-1) unstable; urgency=low
+
+  * Initial release. (Closes: #278940)
+
+ -- Mathieu Malaterre <malat@debian.org>  Sun, 27 Oct 2013 07:08:17 +0100
