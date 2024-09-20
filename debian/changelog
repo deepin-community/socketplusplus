@@ -1,3 +1,9 @@
+socket++ (1.12.13+git20131030.5d039ba-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Fri, 20 Sep 2024 12:18:51 +0800
+
 socket++ (1.12.13+git20131030.5d039ba-1) unstable; urgency=medium
 
   * d/watch: use git mode since upstream does not use release tags
